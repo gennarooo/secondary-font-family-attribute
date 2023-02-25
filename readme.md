@@ -1,6 +1,6 @@
-# Secondary Font Attribute for the Block Editor
+# Secondary Font Attribute for the Wordpress Block Editor
 
-Add a new button to the block editor to change the font family for the selected text within the same paragraph.
+Add a new button to the Wordpress block editor to change the font family for the selected text within the same paragraph.
 
 ![](/assets/secondary-font-button.png)
 
