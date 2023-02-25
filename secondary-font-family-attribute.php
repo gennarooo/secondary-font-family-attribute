@@ -1,7 +1,7 @@
 <?php 
 /**
  * Plugin Name: Secondary Font Family Attribute for the Paragraph Block Editor
- * Plugin URI: https://github.com/gennarooo
+ * Plugin URI: https://github.com/gennarooo/secondary-font-family-attribute
  * Description: Add a custom attribute to the text formatting toolbar in the block editor.
  * Version: 1
  * Author: Gennaro Cestrone
@@ -17,12 +17,6 @@ function font_attr_enqueue_block_editor_assets() {
 		true
 	);
 	wp_set_script_translations( 'font-family-attribute-script', 'secondary-font-family-attribute' );
-
-	wp_enqueue_style( 'font-attribute-style',
-		plugins_url( 'build/index.css', __FILE__ ),
-		[],
-		filemtime( plugin_dir_path( __FILE__ ) . 'build/index.css' )
-	);
 }
 add_action( 'enqueue_block_editor_assets', 'font_attr_enqueue_block_editor_assets' );
 
